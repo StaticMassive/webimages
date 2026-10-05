@@ -71,18 +71,22 @@
   .sma .smw__wide img{aspect-ratio:7/5}
   .sma .smw__tall img{object-position:center 30%}
   .sma .smw figcaption{position:absolute;left:12px;bottom:10px;font-family:var(--sm-osd);font-size:18px;color:#f0f0f0;text-shadow:1px 1px 0 #000}
-  .sma .smb__top{display:grid;gap:14px;max-width:640px;margin-bottom:clamp(28px,4vw,48px)}
+  .sma .smb{display:grid;gap:clamp(18px,3vw,28px)}
+  .sma .smb__top{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:end;gap:10px clamp(20px,4vw,48px)}
   .sma .smb__top .smx-h2{margin:0}
-  .sma .smb__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
-  .sma .smb__item{display:grid;gap:22px;align-content:start}
-  .sma .smb__art{margin:0;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.55);transform:rotate(-1.5deg)}
+  .sma .smb__top .smx-body{max-width:46ch;padding-bottom:6px}
+  .sma .smb__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,40px)}
+  .sma .smb__item{display:grid;grid-template-columns:clamp(120px,16vw,180px) minmax(0,1fr);gap:clamp(14px,2vw,24px);align-items:center;padding:14px;border:1px solid var(--sm-line);background:#111}
+  .sma .smb__art{margin:0;overflow:hidden;aspect-ratio:1;transform:rotate(-1.5deg);box-shadow:0 10px 24px rgba(0,0,0,.5)}
   .sma .smb__item:nth-child(2) .smb__art{transform:rotate(1.5deg)}
-  .sma .smb__art img{width:100%;aspect-ratio:4/5;object-fit:cover}
-  .sma .smb__copy{display:grid;gap:12px;justify-items:start}
-  .sma .smb__copy h3{font-family:var(--sm-display);font-weight:400;text-transform:uppercase;font-size:34px;line-height:.95;margin:0}
-  .sma .smb__copy p{margin:0}
-  .sma .smb__price{font-family:"Courier Prime","Courier New",monospace;font-size:15px;opacity:.8}
-  @media (max-width:820px){.sma .smd,.sma .smw,.sma .smb__grid{grid-template-columns:1fr}.sma .smw__tall{display:none}.sma .smd__img{max-width:420px}.sma .smg-nav button{display:none}}
+  .sma .smb__art img{width:100%;height:100%;object-fit:cover}
+  .sma .smb__copy{display:grid;gap:8px;justify-items:start}
+  .sma .smb__copy h3{font-family:var(--sm-display);font-weight:400;text-transform:uppercase;font-size:26px;line-height:.95;margin:0}
+  .sma .smb__copy p{margin:0;font-size:14px;color:var(--sm-dim)}
+  .sma .smb__copy .smx-btn{padding:9px 16px;font-size:14px}
+  .sma .smb__price{font-family:"Courier Prime","Courier New",monospace;font-size:14px;opacity:.8}
+  .sma .sma-cities .sma-everywhere{margin:18px 0 0;color:var(--sm-dim);font-size:15px}
+  @media (max-width:820px){.sma .smd,.sma .smw,.sma .smb__grid,.sma .smb__top{grid-template-columns:1fr}.sma .smb__top{align-items:start}.sma .smw__tall{display:none}.sma .smd__img{max-width:420px}.sma .smg-nav button{display:none}}
   @media (prefers-reduced-motion:reduce){.sma .smg-card{animation:none}}
   </style>
 
@@ -100,8 +104,8 @@
   </section>
 
   <section class="sma-block smw" aria-label="Guerrilla whoop session in New York">
-    <figure class="smw__wide smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/about-crew-midtown.jpg" alt="Crew of FPV pilots in goggles flying tinywhoops on a Midtown Manhattan sidewalk next to a Citi Bike dock" loading="lazy"><figcaption>CH 02 · THE SESSION</figcaption></figure>
-    <figure class="smw__tall smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/about-el-build.jpg" alt="Pilot with goggles on his head fixing a tinywhoop under an elevated subway track in New York" loading="lazy"><figcaption>CH 03 · PIT STOP</figcaption></figure>
+    <figure class="smw__wide smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/about-crew-midtown.jpg" alt="Crew of FPV pilots in goggles flying tinywhoops on a Midtown Manhattan sidewalk next to a Citi Bike dock" loading="lazy"><figcaption>CH 02 · THE SESSION · NEW YORK</figcaption></figure>
+    <figure class="smw__tall smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/about-el-build.jpg" alt="Pilot with goggles on his head fixing a tinywhoop under an elevated subway track in New York" loading="lazy"><figcaption>CH 03 · PIT STOP · FPV VEGAN</figcaption></figure>
   </section>
 
   <section class="sma-block smg" id="field-guide">
@@ -127,30 +131,32 @@
     <p class="smg-hint">scroll sideways ▸▸</p>
     <script>(function(){var s=document.currentScript,sec=s&&s.closest('.smg');if(!sec)return;var d=sec.querySelector('.smg-deck');sec.querySelectorAll('.smg-nav button').forEach(function(b){b.addEventListener('click',function(){d.scrollBy({left:(+b.dataset.dir)*(d.querySelector('.smg-card').offsetWidth+16),behavior:'smooth'})})})})();</script>
   </section>
-
+</div>
+<div class="smx smh sma sma--2">
   <section class="sma-block smb" id="gear">
     <div class="smb__top">
       <h2 class="smx-h2"><span class="smh-kicker">tip 03, sorted</span>pack for the walk.</h2>
       <p class="smx-body">The tips get you in and out. These get your whoops, packs and props from spot to spot in one piece.</p>
     </div>
     <div class="smb__grid">
-      <article class="smb__item"><figure class="smb__art"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/gear-sling-subway.jpg" alt="FPV pilot on a New York subway platform wearing the black Static Massive Quick Access Sling" loading="lazy" style="object-position:center 40%"></figure>
-        <div class="smb__copy"><h3>quick access sling</h3><p>Padded dividers keep the whoops apart. The quick pocket is for whatever you grab first. Quad out fast, back in faster.</p><p class="smb__price">$35</p><a class="smx-btn" href="/products/quick-access-sling">check it out</a></div></article>
-      <article class="smb__item"><figure class="smb__art"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/gear-fanny-close.jpg" alt="Static Massive fanny pack worn on the waist, unzipped with tinywhoops and LiPo packs inside" loading="lazy" style="object-position:center 55%"></figure>
-        <div class="smb__copy"><h3>fanny pack</h3><p>Pockets full? Spare packs, props and a backup whoop go on your waist, so your hands stay free for the radio.</p><p class="smb__price">$32</p><a class="smx-btn" href="/products/fanny-pack">check it out</a></div></article>
+      <article class="smb__item"><figure class="smb__art"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/gear-sling-close.jpg" alt="Hand pulling a 3-inch quad out of the black Static Massive Quick Access Sling on a subway platform" loading="lazy"></figure>
+        <div class="smb__copy"><h3>quick access sling</h3><p>Padded dividers, a separate zip compartment and a quick pocket. Quad out fast, back in faster.</p><p class="smb__price">$35</p><a class="smx-btn" href="/products/quick-access-sling">check it out</a></div></article>
+      <article class="smb__item"><figure class="smb__art"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/gear-fanny-close-sq.jpg" alt="Static Massive fanny pack unzipped on the waist with a tinywhoop and LiPo packs inside" loading="lazy"></figure>
+        <div class="smb__copy"><h3>fanny pack</h3><p>Spare packs, props and a backup whoop on your waist. Hands stay free for the radio.</p><p class="smb__price">$32</p><a class="smx-btn" href="/products/fanny-pack">check it out</a></div></article>
     </div>
   </section>
 
   <section class="sma-block sma-cities">
     <h2 class="smx-h2"><span class="smh-kicker">scenes</span>where it lives</h2>
     <div class="sma-citygrid">
-      <div><h3>new york</h3><p>New York put guerrilla whooping on the map. Tight blocks, a thousand gaps, everyone too busy to care.</p></div>
-      <div><h3>los angeles</h3><p>Downtown parking structures, empty lots, long concrete and skateparks.</p></div>
-      <div><h3>portland</h3><p>Bridges, warehouses, wet concrete. Rain doesn't cancel the session, it just makes the clip moodier.</p></div>
-      <div><h3>japan</h3><p>Tokyo, Kyoto and Osaka. Back alleys, neon, 7-Eleven runs. The setting for Kamakaze Tsunami.</p></div>
-      <div><h3>france</h3><p>Old stone, tight streets and stairwells that have been around for centuries. Plenty of lines nobody has flown yet.</p></div>
-      <div><h3>everywhere else</h3><p>Any city with a stairwell and a pilot who can't sit still.</p></div>
+      <div><h3>new york</h3><p>The mecca. New York put guerrilla whooping on the map: tight blocks, a thousand gaps, and cops who have bigger things to deal with.</p></div>
+      <div><h3>los angeles</h3><p>Downtown parking structures, empty lots, long concrete and skateparks. Still growing, and getting itself on the map.</p></div>
+      <div><h3>portland</h3><p>Bridges, warehouses, wet concrete. One of the fastest growing whoop scenes anywhere. Rain just makes the clip moodier.</p></div>
+      <div><h3>japan</h3><p>Tokyo is massively bigger than New York and the strictest city on this list. Osaka runs more chill and is easier to guerrilla whoop. Kyoto in between. The setting for Kamakaze Tsunami.</p></div>
+      <div><h3>europe</h3><p>Paris, London, Berlin, Madrid, Milan. Old stone, tight streets and stairwells that have been around for centuries. Plenty of lines nobody has flown yet.</p></div>
+      <div><h3>south america</h3><p>São Paulo and Buenos Aires. Big cities, loud streets, pilots who fly like they mean it.</p></div>
     </div>
+    <p class="sma-everywhere">Everywhere else: any city with a stairwell and a pilot who can't sit still.</p>
   </section>
 
   <section class="sma-block sma-film">
