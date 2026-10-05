@@ -76,8 +76,12 @@
   .sma .smb__top .smx-h2{margin:0}
   .sma .smb__top .smx-body{max-width:46ch;padding-bottom:6px}
   .sma .smb__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,40px)}
-  .sma .smb__item{display:grid;grid-template-columns:clamp(120px,16vw,180px) minmax(0,1fr);gap:clamp(14px,2vw,24px);align-items:center;padding:14px;border:1px solid var(--sm-line);background:#111}
-  .sma .smb__art{margin:0;overflow:hidden;aspect-ratio:1;transform:rotate(-1.5deg);box-shadow:0 10px 24px rgba(0,0,0,.5)}
+  .sma .smb__item{display:grid;grid-template-columns:clamp(170px,24vw,300px) minmax(0,1fr);gap:clamp(16px,2.5vw,30px);align-items:center;padding:16px;border:1px solid var(--sm-line);background:#111}
+  .sma .smb__art{position:relative;margin:0;overflow:hidden;aspect-ratio:5/4;transform:rotate(-1.5deg);box-shadow:0 10px 24px rgba(0,0,0,.5)}
+  .sma .smb__art::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .15s;mix-blend-mode:hard-light;background:repeating-linear-gradient(0deg,rgba(0,0,0,.28) 0 1px,transparent 1px 3px),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.3' numOctaves='1' seed='7' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 6 -2.6  0 0 0 6 -2.6  0 0 0 6 -2.6  0 0 0 0 1'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");background-size:auto,240px 240px}
+  .sma .smb__item:hover .smb__art::before{opacity:.45;animation:smx-static .24s steps(3) infinite}
+  .sma .smb__item:hover .smb__art img{transform:scale(1.04)}
+  .sma .smb__art img{transition:transform .4s}
   .sma .smb__item:nth-child(2) .smb__art{transform:rotate(1.5deg)}
   .sma .smb__art img{width:100%;height:100%;object-fit:cover}
   .sma .smb__copy{display:grid;gap:8px;justify-items:start}
@@ -100,7 +104,7 @@
         <p>You'll see it spelled <b>guerrilla whoop</b>, <b>guerilla whoop</b> or <b>gorilla whoop</b>. Same thing.</p>
       </div>
     </div>
-    <figure class="smd__img smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/about-empire-pilot.jpg" alt="FPV pilot in goggles flying a tinywhoop at the foot of the Empire State Building in New York" style="object-position:center 35%"><figcaption>CH 01 · MIDTOWN</figcaption></figure>
+    <figure class="smd__img smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/about-empire-pilot.jpg" alt="FPV pilot in goggles flying a tinywhoop at the foot of the Empire State Building in New York" style="object-position:center 35%"><figcaption>CH 01 · MIDTOWN · FPV VEGAN</figcaption></figure>
   </section>
 
   <section class="sma-block smw" aria-label="Guerrilla whoop session in New York">
