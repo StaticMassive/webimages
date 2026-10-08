@@ -3,7 +3,7 @@
   <script>(function(){function go(){var s=document.querySelector('.product-info__summary'),u=document.querySelector('.product-info__additional-info .accordion__content ul');if(!s||!u||document.querySelector('.smp-fab'))return;var L=[].map.call(u.querySelectorAll('li'),function(l){return l.textContent.trim()}),m=L[0]||'',p=[],w,f;var cf=m.match(/cotton-faced.*?(\d\d\/\d\d)/i);m=cf?cf[1]+' cotton/poly, cotton-faced':m.replace(/^solid colors are /i,'').replace(/, \d+ single/i,'');if(!/cotton|polyester|poly/i.test(m))return;p.push(m);L.forEach(function(x){var a=x.match(/^(\w+weight)[^(]*\(([\d.]+ ?oz)\)/i);if(a&&!w)w=a[1]+' '+a[2];var b=x.match(/^(\w+) fit$/i);if(b&&!f)f=b[1]+' fit';if(/garment-dyed/i.test(x))p.push('garment-dyed')});if(w)p.splice(1,0,w);if(f)p.push(f);var d=document.createElement('p');d.className='smp-fab';d.innerHTML='<b>fabric</b>'+p.join(' · ').toLowerCase()+'<a>full specs</a>';d.querySelector('a').onclick=function(){var h=u.closest('.accordion').querySelector('[data-accordion=trigger]');if(h.getAttribute('aria-expanded')!=='true')h.click();h.scrollIntoView({behavior:'smooth',block:'center'})};s.appendChild(d)}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go):go()})();</script>
 
   <section class="smp-band">
-    <figure class="smp-band__img smh-grade"><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/crew-fist-bump.jpg" alt="Two FPV pilots with goggles and radios bumping fists under a New York overpass"></figure>
+    <figure class="smp-band__img smh-grade"><img fetchpriority="high" width="1600" height="1134" src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/crew-fist-bump.jpg" alt="Two FPV pilots with goggles and radios bumping fists under a New York overpass"></figure>
     <div class="smp-band__copy">
       <p class="smh-kicker">designed in the scene</p>
       <p class="smp-hook">born from<br>the community.</p>
@@ -23,15 +23,15 @@
     <p class="smh-kicker">keep going</p>
     <div class="smp-more__row">
       <a class="smp-tile" href="/pages/kamakaze-tsunami">
-        <figure><img src="https://cdn.fourthwall.com/offer/sh_b2cda315-78dc-4d20-bb5a-0e212a9addbf/12600ce9-6d32-4c90-82c6-e33797b0d2dc.jpeg" alt="Kamakaze Tsunami: The Nihon Tapes guerrilla whoop film and printed zine"></figure>
+        <figure><img loading="lazy" decoding="async" src="https://cdn.fourthwall.com/offer/sh_b2cda315-78dc-4d20-bb5a-0e212a9addbf/12600ce9-6d32-4c90-82c6-e33797b0d2dc.jpeg" alt="Kamakaze Tsunami: The Nihon Tapes guerrilla whoop film and printed zine"></figure>
         <span class="smh-tag">guerrilla whoop film · japan</span><b>kamakaze tsunami</b><span class="smh-typed">film + zine — coming 11.01</span>
       </a>
       <a class="smp-tile" href="/collections/original-photography">
-        <figure><img src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/hdr-prints-full-throttle.jpg" alt="Full Throttle original FPV photograph print by Static Massive"></figure>
+        <figure><img loading="lazy" decoding="async" width="1075" height="1077" src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/photos/hdr-prints-full-throttle.jpg" alt="Full Throttle original FPV photograph print by Static Massive"></figure>
         <span class="smh-tag">real photography. never AI.</span><b>original photography</b><span class="smh-typed">from $12</span>
       </a>
       <a class="smp-tile" href="/collections/lids">
-        <figure class="smp-tile--product"><img src="https://cdn.fourthwall.com/customizations/sh_b2cda315-78dc-4d20-bb5a-0e212a9addbf/a3a60b36-aad7-4d23-9cba-e7fe8fd0285b.png" alt="Static Massive Dlux Hat, navy cap with mint rope and Static Massive wordmark"></figure>
+        <figure class="smp-tile--product"><img loading="lazy" decoding="async" src="https://cdn.fourthwall.com/customizations/sh_b2cda315-78dc-4d20-bb5a-0e212a9addbf/a3a60b36-aad7-4d23-9cba-e7fe8fd0285b.png" alt="Static Massive Dlux Hat, navy cap with mint rope and Static Massive wordmark"></figure>
         <span class="smh-tag">embroidered caps &amp; camp hats</span><b>caps</b><span class="smh-typed">$30</span>
       </a>
     </div>
