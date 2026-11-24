@@ -1,9 +1,9 @@
 {
-  "version": "1.0.0",
-  "notes": "First release.",
+  "version": "1.0.1",
+  "notes": "Drop files straight into Media. Trim pictures now show different parts of the video. On big decks, drop just outside a corner key to fill a quarter, and new dots between keys show more drop spots.",
   "downloads": {
-    "macArm": "https://github.com/StaticMassive/webimages/releases/download/panodek-v1.0.0/PanoDek-1.0.0-mac-Apple-Silicon.dmg",
-    "macIntel": "https://github.com/StaticMassive/webimages/releases/download/panodek-v1.0.0/PanoDek-1.0.0-mac-Intel.dmg",
-    "win": "https://github.com/StaticMassive/webimages/releases/download/panodek-v1.0.0/PanoDek-1.0.0-Windows.zip"
+    "macArm": "https://github.com/StaticMassive/webimages/releases/download/panodek-v1.0.1/PanoDek-mac-Apple-Silicon.dmg",
+    "macIntel": "https://github.com/StaticMassive/webimages/releases/download/panodek-v1.0.1/PanoDek-mac-Intel.dmg",
+    "win": "https://github.com/StaticMassive/webimages/releases/download/panodek-v1.0.1/PanoDek-Windows.zip"
   }
 }
