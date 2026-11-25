@@ -7,15 +7,14 @@ is the list of files and links. It lives at `vinterlace/SITE-KIT.md` in the webi
 Vinterlace (formerly CrashSaver) is a Mac app by Static Massive for FPV pilots. It cleans analog
 static out of DVR footage and brings back clips that won't play.
 
-All files are served from the public `webimages` repo through jsDelivr:
+All files are served from the public `webimages` repo through GitHub Pages:
 
 ```
-https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/<file>
+https://staticmassive.github.io/webimages/vinterlace/<file>
 ```
 
 The page already uses these paths. Files keep the same names when they are updated, so the page picks
-them up without code changes. jsDelivr caches `@main` for up to 12 hours. To show a change at once,
-open `https://purge.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/<file>`.
+them up without code changes. GitHub Pages republishes `main` about a minute after each push; browsers may cache a file for up to 10 minutes.
 
 ---
 
@@ -31,12 +30,12 @@ open `https://purge.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/<fil
 
 Full URLs:
 
-- https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/wordmark-on-dark.svg
-- https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/wordmark-on-light.svg
-- https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/wordmark.svg
-- https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/lockup-stacked.svg
-- https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/icon.svg
-- https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/icon.png
+- https://staticmassive.github.io/webimages/vinterlace/wordmark-on-dark.svg
+- https://staticmassive.github.io/webimages/vinterlace/wordmark-on-light.svg
+- https://staticmassive.github.io/webimages/vinterlace/wordmark.svg
+- https://staticmassive.github.io/webimages/vinterlace/lockup-stacked.svg
+- https://staticmassive.github.io/webimages/vinterlace/icon.svg
+- https://staticmassive.github.io/webimages/vinterlace/icon.png
 
 **How to use the wordmark**
 
@@ -75,7 +74,7 @@ All are 1920×1200 WebP, from build 2.0.0 (65526f5) with the new name and logo.
 | `walkthrough-1.webp` … `walkthrough-5.webp` | The five pages of the in-app tour |
 
 Base URL as above, for example
-https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/vinterlace/clean-workspace.webp
+https://staticmassive.github.io/webimages/vinterlace/clean-workspace.webp
 
 `lens-clean.webp` and `lens-timeline.webp` are close-ups of the Clean controls and the timeline. They
 show no name or logo, so they are still current.
