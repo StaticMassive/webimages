@@ -1,0 +1,52 @@
+  <!-- SOFTWARE: the apps, one click to each -->
+  <style>
+  .smh-apps{display:grid;gap:30px}
+  .smh-apps>*{min-width:0;max-width:100%}
+  .smh-apps__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .smh-app{display:grid;gap:12px;align-content:start;text-decoration:none;background:#111;border:1px solid var(--sm-line);padding:10px 10px 16px;transition:transform .15s,border-color .15s}
+  .smh-app:hover{transform:translate(-3px,-3px);border-color:var(--c);box-shadow:4px 4px 0 var(--c)}
+  .smh-app:focus-visible{outline:2px solid var(--sm-paper);outline-offset:4px}
+  .smh-app figure{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000}
+  .smh-app figure img,.smh-app figure video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+  .smh-app:hover figure img,.smh-app:hover figure video{transform:scale(1.04)}
+  .smh-app__tag{position:absolute;left:8px;top:8px;z-index:3;font-family:var(--sm-osd);font-size:18px;line-height:1;text-transform:uppercase;background:var(--c);color:#fff;padding:4px 8px 3px}
+  .smh-app__row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 4px;min-height:44px}
+  .smx .smh-app__logo{height:clamp(32px,3vw,44px);width:auto;max-width:78%;object-fit:contain;object-position:left center}
+  .smx svg.smh-app__logo{height:clamp(54px,5vw,74px);margin:-8px 0 -8px -3px}
+  .smh-app__logo text{text-transform:none}
+  .smh-app__go{font-family:var(--sm-display);font-size:26px;line-height:1;color:var(--c)}
+  .smh-app__line{padding:0 4px;color:var(--sm-dim);font-size:15px;line-height:1.4}
+  .smh-app__wl{display:flex;gap:8px;align-items:center;padding:0 4px}
+  .smh-app__wl svg{height:22px;width:auto;display:block}
+  @media (max-width:900px){.smh-apps__grid{grid-template-columns:minmax(0,1fr)}.smh-app figure{aspect-ratio:16/9}}
+  @media (prefers-reduced-motion:reduce){.smh-app,.smh-app figure img{transition:none}}
+  </style>
+  <section class="smh-apps">
+    <div class="smh-shop__head">
+      <h2 class="smx-h2"><span class="smh-kicker">desktop apps · Mac + Windows · free</span>for the edit</h2>
+      <p class="smx-body">fly it. cut it. post it.<br><span class="smh-plain">Static Massive software for creators and pilots: a moving video wall for your Stream Deck, a recorder for anything your computer plays, and a video saver and editor in one.</span></p>
+    </div>
+    <div class="smh-apps__grid">
+      <a class="smh-app" style="--c:#a855f7" href="/pages/panodek" aria-label="PanoDek: a video wall app for Stream Deck">
+        <figure><span class="smh-app__tag">free beta</span><video src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/panodek/hero-plus.mp4" poster="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/panodek/poster-creek.jpg" autoplay muted loop playsinline preload="none" aria-hidden="true"></video></figure>
+        <span class="smh-app__row"><img class="smh-app__logo" decoding="async" width="13808" height="2583" src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/panodek/panodek-logo-wordmark-white.svg" alt="PanoDek"><i class="smh-app__go" aria-hidden="true">→</i></span>
+        <span class="smh-app__line">One video across every key of your Stream Deck.</span>
+      </a>
+      <a class="smh-app" style="--c:#ff453a" href="/pages/auxrip" aria-label="AuxRip: record anything your computer plays">
+        <figure><span class="smh-app__tag">free beta</span><img loading="lazy" decoding="async" width="1440" height="900" src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/auxrip/lens-record.webp" alt="Close-up of AuxRip recording computer audio, the timer running"></figure>
+        <span class="smh-app__row"><img class="smh-app__logo" decoding="async" width="1478" height="355" src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/auxrip/auxrip-logo-white.png" alt="AuxRip"><i class="smh-app__go" aria-hidden="true">→</i></span>
+        <span class="smh-app__line">Record anything your computer plays. Play it back as pads.</span>
+      </a>
+      <a class="smh-app" style="--c:#5b8def" href="/pages/toob-stash" aria-label="Toob Stash: save a video and edit it in one place">
+        <figure><span class="smh-app__tag">free</span><img loading="lazy" decoding="async" width="1440" height="900" src="https://cdn.jsdelivr.net/gh/StaticMassive/webimages@main/toobstash/lens-editor.webp" alt="Close-up of Toob Stash with a title over a video and clips on the timeline"></figure>
+        <span class="smh-app__row"><svg class="smh-app__logo" viewBox="0 0 560 100" role="img" aria-label="Toob Stash"><g transform="translate(0 4) scale(0.92)"><rect width="100" height="100" rx="22" fill="#262b35"/><path d="M50 30 36 15M50 30 64 15" stroke="#e8ecf3" stroke-width="5" stroke-linecap="round"/><rect x="16" y="28" width="68" height="54" rx="15" fill="#e8ecf3"/><rect x="23" y="35" width="44" height="40" rx="10" fill="#14171c"/><path d="M45 44v15m-7-7 7 7 7-7M37 67h16" fill="none" stroke="#5b8def" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="75.5" cy="45" r="3.5" fill="#14171c"/><circle cx="75.5" cy="57" r="3.5" fill="#14171c"/></g><text x="112" y="72" font-family="Archivo, system-ui, sans-serif" font-weight="800" font-stretch="112%" font-size="66" letter-spacing="-1.3" fill="#e8ecf3">Toob Stash<tspan fill="#5b8def">.</tspan></text></svg><i class="smh-app__go" aria-hidden="true">→</i></span>
+        <span class="smh-app__line">Save it. Cut it. Post it.</span>
+        <span class="smh-app__wl" aria-hidden="true"><svg viewBox="0 0 28 20"><rect width="28" height="20" rx="5.5" fill="#f03"/><path d="M11.2 5.6v8.8l7.6-4.4z" fill="#fff"/></svg><svg viewBox="0 0 24 24"><defs><radialGradient id="smh-ig1" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#fdf497"/><stop offset=".05" stop-color="#fdf497"/><stop offset=".45" stop-color="#fd5949"/><stop offset=".6" stop-color="#d6249f"/><stop offset=".9" stop-color="#285aeb"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#smh-ig1)"/><rect x="5" y="5" width="14" height="14" rx="4.2" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.4" cy="7.6" r="1.05" fill="#fff"/></svg></span>
+      </a>
+    </div>
+    <div class="smh-sheet__foot">
+      <p class="smh-mline">made by pilots.</p>
+      <a class="smx-btn" href="/pages/software">see all software</a>
+    </div>
+  </section>
+
